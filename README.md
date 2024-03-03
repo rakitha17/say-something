@@ -1,6 +1,6 @@
 # 'Say Something' Ecommerce Web App
 
-A simple TTS application that helps convert text into speech with selected voice.
+A simple TTS application that helps convert text into speech with a selected voice.
 
 ## Table of contents
 
