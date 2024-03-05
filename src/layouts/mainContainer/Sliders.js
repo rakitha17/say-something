@@ -29,16 +29,19 @@ const StyledSlider = styled(Slider)({
 })
 
 function valuetext(value) {
-  return `${value}°C`
+  return `${value}`
 }
 
 export default function Sliders({ handlePitchRateSliders, isListening }) {
-  const handleSliders = React.useCallback((e) => {
-    let name = e.target.name
-    let value = e.target.value
+  const handleSliders = React.useCallback(
+    (e) => {
+      let name = e.target.name
+      let value = e.target.value
 
-    handlePitchRateSliders(name, value)
-  }, [handlePitchRateSliders])
+      handlePitchRateSliders(name, value)
+    },
+    [handlePitchRateSliders]
+  )
 
   return (
     <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -58,10 +61,10 @@ export default function Sliders({ handlePitchRateSliders, isListening }) {
             <StyledSlider
               aria-label={val.name}
               name={val.name}
-              defaultValue={0}
-              min={-5}
-              max={5}
-              step={1}
+              defaultValue={1}
+              min={0}
+              max={2}
+              step={0.5}
               getAriaValueText={valuetext}
               color="secondary"
               disabled={isListening && true}

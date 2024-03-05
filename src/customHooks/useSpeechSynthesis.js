@@ -14,7 +14,7 @@ export const useSpeechSynthesis = () => {
   const [inputContext, setInputContext] = React.useState("")
   const [sliderStat, setSliderStat] = React.useState({
     name: '',
-    value: 0
+    value: 1
   })
 
   const populateVoiceList = React.useCallback(() => {
@@ -32,7 +32,7 @@ export const useSpeechSynthesis = () => {
 
   React.useEffect(() => {
     synth.cancel()
-  }, [])
+  }, [inputContext])
 
   const handlePitchRateSliders = (name, value) => {
     setSliderStat({
@@ -69,6 +69,6 @@ export const useSpeechSynthesis = () => {
     inputContext,
     setInputContext,
     toggleSpeaking,
-    handlePitchRateSliders
+    handlePitchRateSliders,
   }
 }
