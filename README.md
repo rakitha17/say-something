@@ -1,4 +1,4 @@
-# 'Say Something' Ecommerce Web App
+# 'Say Something' TTS App
 
 A simple TTS application that helps convert text into speech with a selected voice.
 
