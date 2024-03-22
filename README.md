@@ -1,6 +1,6 @@
-# 'Say Something' TTS App
+# 'Say Something' TTS and STT App
 
-A simple TTS application that helps convert text into speech with a selected voice.
+A simple application with a combination of TTS (Text to Speech) and STT (Speech to Text) that helps convert text to speech with a selected voice.
 
 ## Table of contents
 
